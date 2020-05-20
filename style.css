@@ -1,0 +1,176 @@
+/* genaral styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    background: whitesmoke;
+    color: #3F3F3F; 
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;   
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    font-size: 150px;
+    font-weight: 600;
+    color: #F8BC53;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* styles for home slide */
+.homeSlide {
+    height: 100vh;
+}
+
+header {
+    height: 17vh;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+header img {
+    position: relative;
+    height: 12vh;
+}
+
+header section {
+
+}
+
+.slogan {
+    text-align: right;
+    font-weight: 600;
+    font-size: 10vh;
+    text-align: right;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    z-index: 10;
+    width: 500px;
+    height: 400px;
+    margin-top: 25vh;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+
+/* styles for fares slide */
+.faresSlide {
+    min-height: 100vh;
+}
+
+
+/* styles for offers slide */
+.offersSlide {
+    min-height: 110vh;
+    background: #F1E9E9;
+}
+
+.siema {
+    text-align: center;
+}
+
+.offers {
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.offerOne {
+    background-image: url(pictures/Berlin_2_small.jpg);
+}
+
+.offerTwo {
+    background-image: url(pictures/Dublin_small.jpg);
+}
+
+.offerThree {
+    background-image: url(pictures/london_small.jpg);
+}
+
+
+
+/* styles for quotes slide */
+.quotesSlide {
+    min-height: 50vh;
+}
+
+
+/* styles for instagram slide */
+.instagramSlide {
+    min-height: 100vh;
+    background: #F1E9E9;
+}
+
+
+/* styles for newsletter slide */
+.newsletterSlide {
+    min-height: 50vh;
+}
+
+
+/* styles for footer */
+footer {
+    min-height: 30vh;
+    background: #F1E9E9;
+}
