@@ -1,4 +1,5 @@
 /* genaral styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +10,17 @@
 body {
     width: 100vw;
     background: whitesmoke;
-    color: #3F3F3F; 
+    color: #3F3F3F;
     font-family: 'proxima-nova', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 600;
 }
 
@@ -39,7 +43,9 @@ h3 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 /* styles for home slide */
+
 .homeSlide {
     height: 100vh;
 }
@@ -58,9 +64,7 @@ header img {
     height: 12vh;
 }
 
-header section {
-
-}
+header section {}
 
 .slogan {
     text-align: right;
@@ -110,6 +114,7 @@ nav ul li {
 
 
 /* styles for fares slide */
+
 .faresSlide {
     min-height: 100vh;
     display: grid;
@@ -180,25 +185,52 @@ nav ul li {
 
 
 /* styles for offers slide */
-.offersSlide {
-    min-height: 110vh;
-    background: #F1E9E9;
-}
 
-.siema {
+.offersSlide {
+    min-height: 100vh;
+    background: #F1E9E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
 }
 
+.carousel {
+    height: 77vh;
+}
+
+.gallery {
+    height: 72vh;
+}
+
+.gallery-cell {
+    height: 55vh;
+    margin: 8vh 10px 200px 0;
+    /* background: #8C8; */
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell.is-selected {
+    animation: scaleMove 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleMove {
+    100% {
+        margin-top: 0;
+        height: 70vh;
+    }
+}
+
 .offers {
-    width: 100%;
-    height: 110vh;
+    width: 70%;
+    height: 55vh;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-
 
 .offerOne {
     background-image: url(pictures/Berlin_2_small.jpg);
@@ -213,14 +245,15 @@ nav ul li {
 }
 
 
-
 /* styles for quotes slide */
+
 .quotesSlide {
     min-height: 50vh;
 }
 
 
 /* styles for instagram slide */
+
 .instagramSlide {
     min-height: 100vh;
     background: #F1E9E9;
@@ -228,12 +261,14 @@ nav ul li {
 
 
 /* styles for newsletter slide */
+
 .newsletterSlide {
     min-height: 50vh;
 }
 
 
 /* styles for footer */
+
 footer {
     min-height: 30vh;
     background: #F1E9E9;
