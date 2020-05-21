@@ -112,6 +112,70 @@ nav ul li {
 /* styles for fares slide */
 .faresSlide {
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+}
+
+.faresPicture img{
+    max-width: 400px;
+    height: auto;
+    margin-left: 7em;
+}
+.faresPicture{
+    align-self: center;
+}
+
+.faresInfo{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.faresDetail{
+    display: grid;
+    grid-template-rows: auto 20%;
+    margin-bottom: 2em;
+}
+
+.faresIcons{
+   align-self: flex-end;
+   max-width:  420px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.faresIcons img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.faresIconText{
+    align-self: flex-top;
+    max-width:  408px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faresIconText p{
+    font-size: 10px;
+    color: #777777;
+   margin-top: 0.5em;
+   margin-left: 1em;
+
+}
+
+.faresText h1{
+    font-size: 70px;
+    margin-bottom: 0.8em;
+}
+
+.faresText{
+    max-width: 584px;
+    line-height: 180%;
+
+}
+.coloredLink{
+    color: #A8008D;
 }
 
 
