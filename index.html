@@ -2,107 +2,109 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.typekit.net/nqy8hyy.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/nqy8hyy.css">
+    <link rel="stylesheet" href="flickity.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
 
-  <!-- home slide section -->
-  <section class="homeSlide">
-    <section class="banner">
-      <header>
-        <img src="pictures/wowair-logo-250x250.png" alt="wowair logo">
-        <section>
-          <h1 class="slogan">there's<br>no limit</h1>
-          <nav>
-            <ul>
-              <li>Honest Faires</li>
-              <li>Offers</li>
-              <li>Instagram</li>
-            </ul>
-          </nav>
-        </section>
-      </header>
+    <!-- home slide section -->
+    <section class="homeSlide">
+        <section class="banner">
+            <header>
+                <img src="pictures/wowair-logo-250x250.png" alt="wowair logo">
+                <section>
+                    <h1 class="slogan">there's<br>no limit</h1>
+                    <nav>
+                        <ul>
+                            <li>Honest Faires</li>
+                            <li>Offers</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
 
-      <!-- search flight box -->
-      <section class="box">
-      </section>
+            <!-- search flight box -->
+            <section class="box">
+            </section>
 
-      <video autoplay muted loop>
+            <video autoplay muted loop>
         <source src="pictures/video.mp4" type="video/mp4">
       </video>
+        </section>
     </section>
-  </section>
 
 
-  <!-- fares slide section -->
-  <section class="faresSlide">
-    <h1>Honest Fares</h1>
-    <p>WOW air leads the industry with Honest Fares™ which means when you book on WOW air, your Honest Fare includes
-      your bag, seat, food and Internet while traveling in WOW world.
-      WOW fares include all the basics one expects at an honest price.
-      In WOW world™ we offer Honest Fares. Read more</p>
-  </section>
+    <!-- fares slide section -->
+    <section class="faresSlide">
+        <h1>Honest Fares</h1>
+        <p>WOW air leads the industry with Honest Fares™ which means when you book on WOW air, your Honest Fare includes your bag, seat, food and Internet while traveling in WOW world. WOW fares include all the basics one expects at an honest price. In WOW
+            world™ we offer Honest Fares. Read more</p>
+    </section>
 
 
-  <!-- offers slide section -->
-  <section class="offersSlide">
-    <!-- <h1>WOW Offers</h1> -->
+    <!-- offers slide section -->
+    <section class="offersSlide">
+        <h1>WOW Offers</h1>
 
-    <div class="siema">
-      <section class="offers offerOne">
-        <h2>Berlin – Copenhagen</h2>
-        <h3>79€</h3>
-      </section>
-      <section class="offers offerTwo">
-        <h2>Berlin – Copenhagen</h2>
-        <h3>79€</h3>
-      </section>
-      <section class="offers offerThree">
-        <h2>Berlin – Copenhagen</h2>
-        <h3>79€</h3>
-      </section>
-    </div>
+        <section class="carousel">
+            <!-- Flickity HTML init -->
+            <section class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <section class="gallery-cell offers offerOne">
+                    <h2>Berlin – Copenhagen</h2>
+                    <h3>79€</h3>
+                </section>
+                <section class="gallery-cell offers offerTwo">
+                    <h2>Berlin – Copenhagen</h2>
+                    <h3>79€</h3>
+                </section>
+                <section class="gallery-cell offers offerThree">
+                    <h2>Berlin – Copenhagen</h2>
+                    <h3>79€</h3>
+                </section>
+            </section>
+        </section>
 
-    <!-- <button class="prev">prev</button>
+        <!-- <button class="prev">prev</button>
     <button class="next">next</button> -->
 
-  </section>
+    </section>
 
 
-  <!-- quotes slide section -->
-  <section class="quotesSlide">
-    <h1>Quotes</h1>
-  </section>
+    <!-- quotes slide section -->
+    <section class="quotesSlide">
+        <h1>Quotes</h1>
+    </section>
 
 
-  <!-- instagram slide section -->
-  <section class="instagramSlide">
-    <h1>WOW on Instagram<br>
-      let’s meet there!</h1>
-  </section>
+    <!-- instagram slide section -->
+    <section class="instagramSlide">
+        <h1>WOW on Instagram<br> let’s meet there!</h1>
+    </section>
 
 
-  <!-- instagram slide section -->
-  <section class="newsletterSlide">
-    <h1>Be the first to learn<br>
-      about new offers!</h1>
-  </section>
+    <!-- instagram slide section -->
+    <section class="newsletterSlide">
+        <h1>Be the first to learn<br> about new offers!</h1>
+    </section>
 
 
-  <!-- footer -->
-  <footer>
-    <p>All copyrights reserved to Wowair</p>
-  </footer>
+    <!-- footer -->
+    <footer>
+        <p>All copyrights reserved to Wowair</p>
+    </footer>
 
 
 
-  <script src="siema.min.js"></script>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
+    <script src="flickity.js"></script>
 </body>
 
 </html>
