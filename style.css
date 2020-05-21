@@ -251,6 +251,23 @@ nav ul li {
     min-height: 50vh;
 }
 
+.quoteBox{
+    width: 45%;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    padding-top: 8%;
+}
+
+#quote{
+    color: #A8008D;
+    font-size: 1.8em;
+}
+#quoteAuthor{
+    font-size: 1em;
+    font-weight: bold;
+}
+
 
 /* styles for instagram slide */
 
