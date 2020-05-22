@@ -9,7 +9,6 @@
 
 body {
     width: 100vw;
-    background: whitesmoke;
     color: #3F3F3F;
     font-family: 'proxima-nova', sans-serif;
     font-style: normal;
@@ -119,7 +118,6 @@ nav ul li {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: white;
 }
 
 .faresPicture img{
@@ -282,7 +280,44 @@ nav ul li {
 
 .newsletterSlide {
     min-height: 50vh;
+    display: grid;
+    grid-auto-rows: auto auto;
+    justify-content: center;
+
 }
+
+.newslatterHeading h1{
+    text-align: center;
+    font-weight:0;
+    font-size: 60px;
+    line-height: 120%;
+    margin-top: 1em;
+}
+
+.newsletterInput #field{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #3F3F3F;
+    background-color: #F1E9E9;
+    height: 45px;
+    width: 390px;
+    padding-left: 20px;
+}
+
+.newsletterInput #submit{
+    box-sizing: border-box;
+    border: none;
+    border-radius:4px;
+    font-size: 18px;
+    color: #F8BC53;
+    background-color: #A8008D;
+    height: 45px;
+    width: 132px;
+    margin-left: -0.5em;
+}
+
 
 
 /* styles for footer */
@@ -290,4 +325,23 @@ nav ul li {
 footer {
     min-height: 30vh;
     background: #F1E9E9;
+    display: grid;
+    grid-template-rows: 75% 25%;
+
+}
+
+.footerCR{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 55% 10%;
+    font-size: 12px;
+}
+
+.footerCR p{
+    padding-top: 0.5em;
+}
+
+.footerCR img{
+    max-width: 18%;
+    margin-left: 1em;
 }
