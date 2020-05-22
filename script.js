@@ -37,14 +37,11 @@
     const quotesElement = document.querySelector("#quote");
     const quotesAuthorElement = document.querySelector("#quoteAuthor");
 
-
-
     // Initiate function that sets up the quotes changer
     function initiateQuoteChanger(data) {
         quotesList = data.quotes;
         console.log("List of quotes:", quotesList);
         console.log("number of quotes:", quotesList.length);
-
 
         // show first quote
         currentQuote = 0; // set the currentQuote
@@ -55,7 +52,6 @@
         // setup timer
         window.setInterval(nextQuote, 3500);
     }
-
 
     // This function changes the show quote to the next quote and is called from the setInterval timer
     function nextQuote() {
