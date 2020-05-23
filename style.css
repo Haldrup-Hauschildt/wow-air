@@ -27,14 +27,14 @@ h1 {
     font-size: 60px;
 }
 
-h2 {
+.offersSlide h2 {
     font-size: 50px;
     color: whitesmoke;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-h3 {
+.offersSlide h3 {
     font-size: 150px;
     font-weight: 600;
     color: #F8BC53;
@@ -73,6 +73,7 @@ header section {}
     letter-spacing: 0.1em;
     line-height: 100%;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 nav {
@@ -102,13 +103,59 @@ nav ul li {
     height: 100%;
 }
 
-.box {
+.seachBox {
     z-index: 10;
     width: 500px;
-    height: 400px;
+    height: 340px;
     margin-top: 25vh;
-    background-color: whitesmoke;
+    background-image: ;
     opacity: 0.9;
+    background-image: url(pictures/yellow_bg_1.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 75px 100px;
+    grid-template-columns: auto;
+    padding: 33px 50px 50px 50px;
+    border-radius: 4px;
+}
+
+.seachBox h2 {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.choose {
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    position: absolute;
+    padding: 18px 10px;
+    font-size: 14px;
+}
+
+.seachBox input[type=text] {
+    width: 100%;
+    height: 70px;
+    padding: 36px 20px 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.seachBox input::placeholder {
+    color: lightgray;
 }
 
 
@@ -120,64 +167,64 @@ nav ul li {
     grid-template-columns: 50% 50%;
 }
 
-.faresPicture img{
+.faresPicture img {
     max-width: 400px;
     height: auto;
     margin-left: 7em;
 }
-.faresPicture{
+
+.faresPicture {
     align-self: center;
 }
 
-.faresInfo{
+.faresInfo {
     display: grid;
     grid-template-rows: 40% 60%;
 }
 
-.faresDetail{
+.faresDetail {
     display: grid;
     grid-template-rows: auto 20%;
     margin-bottom: 2em;
 }
 
-.faresIcons{
-   align-self: flex-end;
-   max-width:  420px;
-   display: flex;
-   justify-content: space-between;
-}
-
-.faresIcons img{
-    max-width: 50px;
-    max-height: 50px;
-}
-
-.faresIconText{
-    align-self: flex-top;
-    max-width:  408px;
+.faresIcons {
+    align-self: flex-end;
+    max-width: 420px;
     display: flex;
     justify-content: space-between;
 }
 
-.faresIconText p{
-    font-size: 10px;
-    color: #777777;
-   margin-top: 0.5em;
-   margin-left: 1em;
-
+.faresIcons img {
+    max-width: 50px;
+    max-height: 50px;
 }
 
-.faresText h1{
+.faresIconText {
+    align-self: flex-top;
+    max-width: 408px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faresIconText p {
+    font-size: 10px;
+    color: #777777;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.faresText h1 {
     font-size: 70px;
     margin-bottom: 0.8em;
 }
 
-.faresText{
+.faresText {
     max-width: 584px;
     line-height: 180%;
-
 }
-.coloredLink{
+
+.coloredLink {
     color: #A8008D;
 }
 
@@ -249,7 +296,7 @@ nav ul li {
     min-height: 50vh;
 }
 
-.quoteBox{
+.quoteBox {
     width: 45%;
     word-wrap: break-word;
     text-align: center;
@@ -257,11 +304,12 @@ nav ul li {
     padding-top: 8%;
 }
 
-#quote{
+#quote {
     color: #A8008D;
     font-size: 1.8em;
 }
-#quoteAuthor{
+
+#quoteAuthor {
     font-size: 1em;
     font-weight: bold;
     padding-top: 4%;
@@ -283,18 +331,17 @@ nav ul li {
     display: grid;
     grid-auto-rows: auto auto;
     justify-content: center;
-
 }
 
-.newslatterHeading h1{
+.newslatterHeading h1 {
     text-align: center;
-    font-weight:0;
+    font-weight: 0;
     font-size: 60px;
     line-height: 120%;
     margin-top: 1em;
 }
 
-.newsletterInput #field{
+.newsletterInput #field {
     box-sizing: border-box;
     border: none;
     border-radius: 4px;
@@ -306,10 +353,10 @@ nav ul li {
     padding-left: 20px;
 }
 
-.newsletterInput #submit{
+.newsletterInput #submit {
     box-sizing: border-box;
     border: none;
-    border-radius:4px;
+    border-radius: 0 4px 4px 0;
     font-size: 18px;
     color: #F8BC53;
     background-color: #A8008D;
@@ -319,7 +366,6 @@ nav ul li {
 }
 
 
-
 /* styles for footer */
 
 footer {
@@ -327,21 +373,20 @@ footer {
     background: #F1E9E9;
     display: grid;
     grid-template-rows: 75% 25%;
-
 }
 
-.footerCR{
+.footerCR {
     text-align: right;
     display: grid;
     grid-template-columns: 55% 10%;
     font-size: 12px;
 }
 
-.footerCR p{
+.footerCR p {
     padding-top: 0.5em;
 }
 
-.footerCR img{
+.footerCR img {
     max-width: 18%;
     margin-left: 1em;
 }
