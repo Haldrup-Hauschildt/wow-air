@@ -300,12 +300,16 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: offerTextMoveDown 0.3s;
-    animation-fill-mode: forwards;
 }
 
-.offersHeadings:hover {
-    animation: offerTextMoveUp 0.3s;
+.offersHeadingsDown {
+    animation: offerTextMoveDown 0.5s;
+    animation-fill-mode: forwards;
+    color: tomato;
+}
+
+.offersHeadingsUp {
+    animation: offerTextMoveUp 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -355,7 +359,7 @@ label {
 }
 
 .bookFadeOut {
-    animation: fadeOut 0.3s;
+    animation: fadeOut 0.5s;
     animation-fill-mode: forwards;
 }
 

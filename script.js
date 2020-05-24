@@ -72,14 +72,19 @@ function nextQuote() {
 }
 
 
-// event listeners for book button animation
-let bookButtons = document.querySelectorAll('.bookButton')
+// event listeners for offers headings and book button animation
 let images = document.querySelectorAll('.offers')
+let offersHeadings = document.querySelectorAll('.offersHeadings')
+let bookButtons = document.querySelectorAll('.bookButton')
 
 
 images.forEach(function(image) {
-    console.log("test")
+    // when hovering on offer image element
     image.addEventListener("mouseover", function(event) {
+        offersHeadings.forEach(function(offersHeading) {
+            offersHeading.classList.add("offersHeadingsUp")
+            offersHeading.classList.remove("offersHeadingsDown")
+        })
         bookButtons.forEach(function(bookButton) {
             bookButton.classList.add("bookFadeIn")
             bookButton.classList.remove("bookFadeOut")
@@ -87,8 +92,12 @@ images.forEach(function(image) {
         })
     });
 
-    console.log("test2")
+    // when moving the mouse pointer out the offer image element
     image.addEventListener("mouseout", function(event) {
+        offersHeadings.forEach(function(offersHeading) {
+            offersHeading.classList.add("offersHeadingsDown")
+            offersHeading.classList.remove("offersHeadingsUp")
+        })
         bookButtons.forEach(function(bookButton) {
             bookButton.classList.add("bookFadeOut")
             bookButton.classList.remove("bookFadeIn")
