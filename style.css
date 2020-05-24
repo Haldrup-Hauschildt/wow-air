@@ -311,19 +311,69 @@ label {
 
 @keyframes offerTextMoveUp {
     0% {
-        margin-top: 2vh;
+        transform: translateY(+20px);
     }
     100% {
-        margin-top: 0;
+        transform: translateY(-20px);
     }
 }
 
 @keyframes offerTextMoveDown {
     0% {
-        margin-top: 0;
+        transform: translateY(-20px);
     }
     100% {
-        margin-top: 2vh;
+        transform: translateY(+20px);
+    }
+}
+
+.bookButton {
+    height: 45px;
+    width: 132px;
+    background-color: #A8008D;
+    border: none;
+    color: #F8BC53;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bookButton:hover {
+    color: whitesmoke;
+}
+
+.noBook {
+    display: none;
+}
+
+.bookFadeIn {
+    animation: fadeIn 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.bookFadeOut {
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -401,6 +451,10 @@ label {
     height: 45px;
     width: 132px;
     margin-left: -0.5em;
+}
+
+.newsletterInput #submit:hover {
+    color: whitesmoke;
 }
 
 
