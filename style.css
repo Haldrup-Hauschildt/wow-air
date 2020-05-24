@@ -127,9 +127,14 @@ form {
     margin-top: 20px;
 }
 
+.searchArrow {
+    position: absolute;
+    transform: translate(350px, 36px);
+}
+
 label {
     position: absolute;
-    padding: 18px 10px;
+    transform: translate(11px, 18px);
     font-size: 14px;
 }
 
