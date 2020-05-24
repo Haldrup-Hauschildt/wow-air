@@ -68,7 +68,6 @@ nav {
 nav ul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 12px;
 }
 
 nav ul li {
@@ -282,21 +281,50 @@ label {
     height: 55vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .offerOne {
-    background-image: url(pictures/Berlin_2_small.jpg);
+    background-image: url(pictures/Kirkjufell.jpg);
 }
 
 .offerTwo {
-    background-image: url(pictures/Dublin_small.jpg);
+    background-image: url(pictures/big_belt_bridge.jpg);
 }
 
 .offerThree {
-    background-image: url(pictures/london_small.jpg);
+    background-image: url(pictures/Puffin_2.jpg);
+}
+
+.offersHeadings {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: offerTextMoveDown 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.offersHeadings:hover {
+    animation: offerTextMoveUp 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes offerTextMoveUp {
+    0% {
+        margin-top: 2vh;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes offerTextMoveDown {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 2vh;
+    }
 }
 
 
