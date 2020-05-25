@@ -2,6 +2,7 @@
  *  QuotesChanger
  *  Responsible for cycling through an array of quotes
  *  (animations done in CSS)
+ *  Kilde: Eksempel, Jarne Beutnagel
  */
 
 
