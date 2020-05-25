@@ -221,6 +221,27 @@ label {
     color: #A8008D;
 }
 
+.fadeIn{
+    opacity: 0;
+    transition: opacity 750ms ease-in;
+}
+
+.fadeIn.appear{
+    opacity: 1;
+}
+
+.fadeInLeft{
+    transform: translateX(-100%);
+    transition: transform 1.5s ease-in;
+}
+
+.fadeInLeft.appear{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
 
 /* styles for offers slide */
 

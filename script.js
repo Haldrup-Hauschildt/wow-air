@@ -25,8 +25,13 @@ fetch('quotes.json')
         }
     )
     .catch(function(err) {
-        console.error('Fetch Error', err);
+       error()
     });
+// some text runs if something goes wrong and you cant receive response from the server
+    function error() {
+        quote.textContent ='The page faild to load the reviews, please check your internet concetion '
+    }
+
 
 // Variable to hold the quotes
 let quotesList = [];
@@ -73,6 +78,8 @@ function nextQuote() {
 }
 
 
+
+
 // event listeners for offers headings and book button animation
 let images = document.querySelectorAll('.offers')
 let offersHeadings = document.querySelectorAll('.offersHeadings')
@@ -105,3 +112,36 @@ images.forEach(function(image) {
         })
     })
 })
+
+
+// fade in animation on honest fares sections
+//inspired from https://www.youtube.com/watch?v=huVJW23JHKQ
+const inFade = document.querySelectorAll('.fadeIn')
+const leftFade = document.querySelectorAll('.fadeInLeft')
+
+const appearOptions = {
+    threshold: 0
+  }
+const scrollAppear = new IntersectionObserver
+
+//when it enters the intersection observer it adds the classlist appear 
+(function(entries, scrollAppear){ 
+    entries.forEach(entry =>{
+        if(!entry.isIntersecting){
+            return
+        } else{
+            entry.target.classList.add('appear')
+            scrollAppear.unobserve(entry.target)
+        }
+    })
+    
+},appearOptions)
+
+//adds the way thet should appear 
+inFade.forEach (fade =>{
+    scrollAppear.observe(fade)
+})
+
+leftFade.forEach(slider => {
+    scrollAppear.observe(slider)
+  })
