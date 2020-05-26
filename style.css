@@ -427,14 +427,85 @@ label {
     padding-top: 4%;
 }
 
-
-/* styles for instagram slide */
+/* styles for instagram slide */ 
 
 #instagramSlide {
     min-height: 100vh;
     background: #F1E9E9;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
-
+.instagramSlideBox {
+    width: 70vw;
+    height: 95vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.instagramSlideHeading {
+    margin: 2vh 0 4vh 0;
+}
+.instagramSlideGrid {
+    display: grid;
+    width: 100%;
+    height: 40vw;
+    max-height: 65vh;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 20% 15% 15% 17% 33%;
+    margin: 0 auto;
+}
+.instagramSlideGrid div {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+}
+.instagramSlideGrid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.instagramSlideGridFeet {
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+}
+.instagramSlideGridCar {
+    grid-row: 4 / 6;
+    grid-column: 2 / 3;
+}
+.instagramSlideGridDog {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+.instagramSlideGridMountain {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+}
+.instagramSlideGridGlacier {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+.instagramSlideGridFontain {
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+}
+.instagramSlideGridMan {
+    grid-row: 4 / 6;
+    grid-column: 4 / 6;
+}
+.instagramSlideGridPlane {
+    grid-row: 2 / 4;
+    grid-column: 5 / 6;
+}
+.instagramSlideTravelboy {
+    width: 15vw;
+    position: absolute;
+    transform: translate(7vw, 30vh);
+}
 
 /* styles for newsletter slide */
 
