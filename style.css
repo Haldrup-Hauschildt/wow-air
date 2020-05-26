@@ -24,7 +24,7 @@ h4 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 
@@ -42,6 +42,15 @@ header {
     justify-content: space-between;
     z-index: 10;
     color: whitesmoke;
+    animation: homeSlideAnimation 1s normal forwards ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes homeSlideAnimation {
+    100% {
+        opacity: 1;
+    }
 }
 
 header img {
@@ -105,6 +114,9 @@ nav ul li a {
     grid-template-columns: auto;
     padding: 33px 50px 50px 50px;
     border-radius: 4px;
+    animation: homeSlideAnimation 2s normal forwards ease-in-out;
+    animation-delay: 2s;
+    opacity: 0;
 }
 
 .seachBox h2 {
@@ -207,7 +219,6 @@ label {
 }
 
 .faresText h1 {
-    font-size: 70px;
     margin-bottom: 0.8em;
 }
 
@@ -402,7 +413,7 @@ label {
 /* styles for quotes slide */
 
 #quotesSlide {
-    min-height: 600px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,7 +545,6 @@ label {
 .newsletterHeading h1 {
     text-align: center;
     font-weight: 0;
-    font-size: 60px;
 }
 
 .newsletterInput {
