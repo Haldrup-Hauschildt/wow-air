@@ -333,7 +333,6 @@ label {
 .offersHeadingsDown {
     animation: offerTextMoveDown 0.5s;
     animation-fill-mode: forwards;
-    color: tomato;
 }
 
 .offersHeadingsUp {

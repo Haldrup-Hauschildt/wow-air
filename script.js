@@ -25,12 +25,12 @@ fetch('quotes.json')
         }
     )
     .catch(function(err) {
-       error()
+        error()
     });
 // some text runs if something goes wrong and you cant receive response from the server
-    function error() {
-        quote.textContent ='The page faild to load the reviews, please check your internet connection '
-    }
+function error() {
+    quote.textContent = 'The page faild to load the reviews, please check your internet connection '
+}
 
 
 // Variable to hold the quotes
@@ -121,27 +121,27 @@ const leftFade = document.querySelectorAll('.fadeInLeft')
 
 const appearOptions = {
     threshold: 0
-  }
+}
 const scrollAppear = new IntersectionObserver
 
 //when it enters the intersection observer it adds the classlist appear 
-(function(entries, scrollAppear){ 
-    entries.forEach(entry =>{
-        if(!entry.isIntersecting){
+    (function(entries, scrollAppear) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
             return
-        } else{
+        } else {
             entry.target.classList.add('appear')
             scrollAppear.unobserve(entry.target)
         }
     })
-    
-},appearOptions)
+
+}, appearOptions)
 
 //adds the way thet should appear 
-inFade.forEach (fade =>{
+inFade.forEach(fade => {
     scrollAppear.observe(fade)
 })
 
 leftFade.forEach(slider => {
     scrollAppear.observe(slider)
-  })
+})
