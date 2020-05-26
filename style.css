@@ -220,26 +220,24 @@ label {
     color: #A8008D;
 }
 
-.fadeIn{
+.fadeIn {
     opacity: 0;
     transition: opacity 750ms ease-in;
 }
 
-.fadeIn.appear{
+.fadeIn.appear {
     opacity: 1;
 }
 
-.fadeInLeft{
+.fadeInLeft {
     transform: translateX(-100%);
     transition: transform 1.5s ease-in;
 }
 
-.fadeInLeft.appear{
+.fadeInLeft.appear {
     transform: translateX(0);
     opacity: 1;
 }
-
-
 
 
 /* styles for offers slide */
@@ -404,7 +402,10 @@ label {
 /* styles for quotes slide */
 
 #quotesSlide {
-    min-height: 50vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quoteBox {
@@ -412,7 +413,6 @@ label {
     word-wrap: break-word;
     text-align: center;
     margin: auto;
-    padding-top: 8%;
 }
 
 #quote {
@@ -426,7 +426,8 @@ label {
     padding-top: 4%;
 }
 
-/* styles for instagram slide */ 
+
+/* styles for instagram slide */
 
 #instagramSlide {
     min-height: 100vh;
@@ -437,6 +438,7 @@ label {
     justify-content: center;
     padding: 20px;
 }
+
 .instagramSlideBox {
     width: 70vw;
     height: 95vh;
@@ -445,9 +447,11 @@ label {
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .instagramSlideHeading {
     margin: 2vh 0 4vh 0;
 }
+
 .instagramSlideGrid {
     display: grid;
     width: 100%;
@@ -457,70 +461,85 @@ label {
     grid-template-rows: 20% 15% 15% 17% 33%;
     margin: 0 auto;
 }
+
 .instagramSlideGrid div {
     overflow: hidden;
     display: flex;
     align-items: center;
     padding: 0.5vw;
 }
+
 .instagramSlideGrid img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 .instagramSlideGridFeet {
     grid-row: 1 / 4;
     grid-column: 1 / 3;
 }
+
 .instagramSlideGridCar {
     grid-row: 4 / 6;
     grid-column: 2 / 3;
 }
+
 .instagramSlideGridDog {
     grid-row: 1 / 3;
     grid-column: 3 / 4;
 }
+
 .instagramSlideGridMountain {
     grid-row: 3 / 5;
     grid-column: 3 / 4;
 }
+
 .instagramSlideGridGlacier {
     grid-row: 5 / 6;
     grid-column: 3 / 4;
 }
+
 .instagramSlideGridFontain {
     grid-row: 1 / 4;
     grid-column: 4 / 5;
 }
+
 .instagramSlideGridMan {
     grid-row: 4 / 6;
     grid-column: 4 / 6;
 }
+
 .instagramSlideGridPlane {
     grid-row: 2 / 4;
     grid-column: 5 / 6;
 }
+
 .instagramSlideTravelboy {
     width: 15vw;
     position: absolute;
-    transform: translate(7vw, 30vh);
+    transform: translate(12vw, 30vh);
 }
+
 
 /* styles for newsletter slide */
 
 #newsletterSlide {
-    min-height: 50vh;
-    display: grid;
-    grid-auto-rows: auto auto;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.newslatterHeading h1 {
+.newsletterHeading h1 {
     text-align: center;
     font-weight: 0;
     font-size: 60px;
-    line-height: 120%;
-    margin-top: 1em;
+}
+
+.newsletterInput {
+    align-self: center;
+    margin-top: 40px;
 }
 
 .newsletterInput #field {
@@ -555,77 +574,88 @@ label {
 /* styles for footer */
 
 footer {
-    min-height: 30vh;
+    height: 300px;
     background: #F1E9E9;
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-rows: 270px 30px;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footerLinks {
+    padding: 80px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 750px;
+}
+
+.footerLinks h4 {
+    padding-bottom: 7px;
+}
+
+.footerLogo {
+    height: 100px;
+}
+
+.footerSocialLinks img {
+    height: 30px;
+}
+
+.footerButton {
+    height: 45px;
+    width: 132px;
+    background-color: #A8008D;
+    border: none;
+    color: #F8BC53;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.footerButton:hover {
+    color: whitesmoke;
 }
 
 .footerCR {
-    text-align: right;
-    display: grid;
-    grid-template-columns: 55% 10%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 8px;
+}
+
+.footerCRText {
     font-size: 12px;
 }
 
-.footerCR p {
-    padding-top: 0.5em;
-}
-
-.footerCR img {
-    max-width: 18%;
-    margin-left: 1em;
-}
 
 /* Media Queries Tablet */
+
 @media (max-width: 600px) {
-
-/* home section */
-
-
-/* fares section */
-
-
-/* offer section */
-
-
-/* quotes section */
-
-
-/* instagram section */
-
-
-/* newsletter section */
-
-
-/* footer */
-
+    /* home section */
+    /* fares section */
+    /* offer section */
+    /* quotes section */
+    /* instagram section */
+    /* newsletter section */
+    /* footer */
 }
 
 
 /* Media Queries Iphone 6/7/8 */
+
 @media (max-height: 700px) {
-
-/* home section */
-
-
-/* fares section */
-
-
-/* offer section */
-
-
-/* quotes section */
-
-
-/* instagram section */
-
-
-/* newsletter section */
-
-
-/* footer */
-
+    /* home section */
+    /* fares section */
+    /* offer section */
+    /* quotes section */
+    /* instagram section */
+    /* newsletter section */
+    /* footer */
 }
-
-

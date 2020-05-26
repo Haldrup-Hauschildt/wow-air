@@ -38,12 +38,16 @@
                 </section>
 
                 <form>
-                    <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
-                    <label for="from">From</label>
-                    <input type="text" id="from" placeholder="Departure from …">
-                    <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
-                    <label for="to">To</label>
-                    <input type="text" id="to" placeholder="Arriving to …">
+                    <section>
+                        <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
+                        <label for="from">From</label>
+                        <input type="text" id="from" placeholder="Departure from …">
+                    </section>
+                    <section>
+                        <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
+                        <label for="to">To</label>
+                        <input type="text" id="to" placeholder="Arriving to …">
+                    </section>
                 </form>
 
             </section>
@@ -105,15 +109,15 @@
                 </section>
                 <section class="gallery-cell offers offerTwo">
                     <section class="offersHeadings">
-                        <h2>Berlin<br>Reykjavik</h2>
-                        <h3>79€</h3>
+                        <h2>Copenhagen<br>Reykjavik</h2>
+                        <h3>59€</h3>
                         <button class="bookButton noBook">Book</button>
                     </section>
                 </section>
                 <section class="gallery-cell offers offerThree">
                     <section class="offersHeadings">
                         <h2>Detroit<br>Reykjavik</h2>
-                        <h3>79€</h3>
+                        <h3>199€</h3>
                         <button class="bookButton noBook">Book</button>
                     </section>
                 </section>
@@ -151,7 +155,7 @@
 
     <!-- instagram newsletter section -->
     <section id="newsletterSlide">
-        <section class="newslatterHeading">
+        <section class="newsletterHeading">
             <h1>Be the first to learn<br>about new offers!</h1>
         </section>
         <section class="newsletterInput">
@@ -163,10 +167,44 @@
 
     <!-- footer -->
     <footer>
-        <section class="moreInfo"> </section>
+        <section class="footerWrapper">
+            <section class="footerLinks">
+
+                <img class="footerLogo" src="pictures/wowair-logo-250x250.png" alt="wowair logo">
+
+                <ul>
+                    <li>
+                        <h4>About us</h4>
+                    </li>
+                    <li><a class="coloredLink" href="">Information</a></li>
+                    <li><a class="coloredLink" href="">Contact us</a></li>
+                    <li><a class="coloredLink" href="">Reviews</a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h4>Support</h4>
+                    </li>
+                    <li><a class="coloredLink" href="">FAQ</a></li>
+                    <li><a class="coloredLink" href="">Help desk</a></li>
+                    <li><a class="coloredLink" href="">Forums</a></li>
+                </ul>
+
+                <section class="footerSocialContact">
+                    <section class="footerSocialLinks">
+                        <img src="pictures/SoMe/iconfinder_BW_Facebook_2_glyph_svg_5305153.png" alt="facebook logo">
+                        <img src="pictures/SoMe/iconfinder_38-instagram_1161953.png" alt="instagram logo">
+                        <img src="pictures/SoMe/iconfinder_social_linked_in_710289.png" alt="lunkedin logo">
+                        <img src="pictures/SoMe/iconfinder_icon-social-twitter_211920.png" alt="twitter logo">
+                    </section>
+                    <button class="footerButton">Contact us</button>
+                </section>
+
+            </section>
+        </section>
+
         <section class="footerCR">
-            <p>All copyrights reserved to Wowair</p>
-            <img src="pictures/wowair-logo-250x250.png" alt="wow air logo">
+            <p class="footerCRText">© 2020 Copyright Wowair </p>
         </section>
     </footer>
 
