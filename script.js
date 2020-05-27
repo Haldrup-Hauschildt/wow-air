@@ -29,7 +29,7 @@ fetch('quotes.json')
     });
 // some text runs if something goes wrong and you cant receive response from the server
 function error() {
-    quote.textContent = 'The page faild to load the reviews, please check your internet connection '
+    quote.textContent = 'The page failed to load the reviews, please check your internet connection '
 }
 
 
@@ -56,7 +56,7 @@ function initiateQuoteChanger(data) {
     quotesAuthorElement.textContent = quotesList[currentQuote].author;
 
     // setup timer
-    window.setInterval(nextQuote, 3500);
+    window.setInterval(nextQuote, 4500);
 }
 
 // This function changes the show quote to the next quote and is called from the setInterval timer
