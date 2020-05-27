@@ -44,9 +44,9 @@ h1 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    animation: homeSlideAnimation 1s 2;
+    animation: homeSlideAnimation 1.3s 2;
     animation-direction: alternate;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 header {
@@ -117,7 +117,7 @@ nav ul li a {
     height: 100%;
     opacity: 0;
     animation: homeSlideAnimation 1s normal forwards ease-in-out;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .seachBox {
