@@ -56,7 +56,7 @@ function initiateQuoteChanger(data) {
     quotesAuthorElement.textContent = quotesList[currentQuote].author;
 
     // setup timer
-    window.setInterval(nextQuote, 3500);
+    window.setInterval(nextQuote, 4500);
 }
 
 // This function changes the show quote to the next quote and is called from the setInterval timer
