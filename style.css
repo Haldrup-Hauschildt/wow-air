@@ -70,6 +70,15 @@ header {
     }
 }
 
+@keyframes homeSlideAnimation09 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
 header img {
     height: 15vh;
     max-height: 250px;
@@ -134,7 +143,7 @@ nav ul li a {
     grid-template-columns: auto;
     padding: 33px 50px 50px 50px;
     border-radius: 4px;
-    animation: homeSlideAnimation 2s normal forwards ease-in-out;
+    animation: homeSlideAnimation09 2s normal forwards ease-in-out;
     animation-delay: 4s;
     opacity: 0;
 }
@@ -260,7 +269,7 @@ label {
 }
 
 .fadeInLeft {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     opacity: 0;
     transition: transform 1.5s ease-in-out;
 }
