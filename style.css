@@ -225,7 +225,6 @@ label {
 }
 
 .faresIconText {
-    align-self: flex-top;
     max-width: 408px;
     display: flex;
     justify-content: space-between;
@@ -571,7 +570,6 @@ label {
 
 .newsletterHeading h1 {
     text-align: center;
-    font-weight: 0;
 }
 
 .newsletterInput {
