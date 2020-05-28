@@ -117,7 +117,7 @@ nav ul li a {
     height: 100%;
     opacity: 0;
     animation: homeSlideAnimation 1s normal forwards ease-in-out;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .seachBox {
@@ -253,7 +253,7 @@ label {
 
 .fadeIn {
     opacity: 0;
-    transition: opacity 750ms ease-in;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .fadeIn.appear {
@@ -262,7 +262,8 @@ label {
 
 .fadeInLeft {
     transform: translateX(-100%);
-    transition: transform 1.5s ease-in;
+    opacity: 0;
+    transition: transform 1.5s ease-in-out;
 }
 
 .fadeInLeft.appear {
@@ -494,8 +495,6 @@ label {
 
 .instagramSlideGrid div {
     overflow: hidden;
-    display: flex;
-    align-items: center;
     padding: 0.5vw;
 }
 
@@ -546,9 +545,12 @@ label {
 }
 
 .instagramSlideTravelboy {
-    width: 15vw;
-    position: absolute;
-    transform: translate(12vw, 30vh);
+    grid-row: 4 / 6;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    transform: translateX(-20px);
 }
 
 
