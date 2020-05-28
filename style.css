@@ -34,6 +34,7 @@ h1 {
 #homeSlide {
     height: 100vh;
     padding: 0 calc(-150px + 13vw);
+    background-color: whitesmoke;
 }
 
 .homeSlideWelcomeBackground {
@@ -503,19 +504,18 @@ label {
 
 .instagramSlideGrid div {
     overflow: hidden;
-    padding: 0.5vw;
+    margin: 0.5vw;
 }
 
 .instagramSlideGrid a {
     overflow: hidden;
-    padding: 0.5vw;
+    margin: 0.5vw;
 }
 
 .instagramSlideGrid img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
 
 .instagramSlideGridFeet {
