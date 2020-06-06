@@ -32,7 +32,7 @@ h1 {
 /* styles for home slide */
 
 #homeSlide {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 calc(-150px + 13vw);
     background-color: whitesmoke;
 }
@@ -51,8 +51,7 @@ h1 {
 }
 
 header {
-    height: 17vh;
-    margin-top: 30vh;
+    margin: 30vh 3vw 0 0;
     display: flex;
     justify-content: space-between;
     z-index: 10;
@@ -80,17 +79,17 @@ header {
     }
 }
 
-header img {
-    height: 15vh;
-    max-height: 250px;
+.homeSildeBannerLogo {
+    height: 10vw;
+    max-height: 150px;
+    min-height: 100px;
     margin-top: -4vh;
 }
 
 .slogan {
     text-align: right;
     font-weight: 600;
-    font-size: calc(2em + 7vh);
-    text-align: right;
+    font-size: clamp(5rem, 8vw, 8rem);
     line-height: 100%;
     text-transform: uppercase;
     white-space: nowrap;
@@ -117,7 +116,7 @@ nav ul li a {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .banner video {
@@ -130,17 +129,17 @@ nav ul li a {
     animation-delay: 2s;
 }
 
-.seachBox {
+.searchBox {
     z-index: 10;
     width: 500px;
     height: 340px;
-    margin-top: 25vh;
+    margin: 25vh 0 0 3vw;
     opacity: 0.9;
-    background-image: url(pictures/yellow_bg_1.png);
+    background-image: url(pictures/yellow_bg_1_copy.png);
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-rows: 75px 100px;
+    grid-template-rows: 75px 200px;
     grid-template-columns: auto;
     padding: 33px 50px 50px 50px;
     border-radius: 4px;
@@ -149,7 +148,7 @@ nav ul li a {
     opacity: 0;
 }
 
-.seachBox h2 {
+.searchBox h2 {
     font-size: 23px;
     font-weight: 400;
     text-align: right;
@@ -177,7 +176,7 @@ label {
     font-size: 14px;
 }
 
-.seachBox input[type=text] {
+.searchBox input[type=text] {
     width: 100%;
     height: 70px;
     padding: 36px 20px 10px 10px;
@@ -188,7 +187,7 @@ label {
     font-size: 18px;
 }
 
-.seachBox input::placeholder {
+.searchBox input::placeholder {
     color: lightgray;
 }
 
@@ -679,42 +678,102 @@ footer {
 }
 
 
+/* Media Queries < 1050px */
+
+@media (max-width: 1050px) {
+    /* home section */
+    .searchBox {
+        width: 400px;
+        height: 272px;
+        padding: 20px 40px 40px 40px;
+    }
+    .searchBox h2 {
+        font-size: 20px;
+    }
+    .searchBoxPlaneIcon {
+        height: 50px;
+    }
+    form {
+        margin-top: unset;
+    }
+    .searchBox input[type=text] {
+        width: 100%;
+        height: 60px;
+        padding: 36px 20px 10px 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+    .searchArrow {
+        transform: translate(275px, 32px);
+    }
+}
+
+@media (max-width: 900px) {
+    /* home section */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeSildeBannerLogo {
+        display: none;
+    }
+    header {
+        margin: 0 0 calc(20px + 5vh) 0;
+        flex-direction: column;
+    }
+    .slogan {
+        text-align: center;
+    }
+    nav {
+        display: none;
+    }
+    .searchBox {
+        margin: unset;
+    }
+}
+
+
 /* Media Queries Tablet */
 
 @media (max-width: 600px) {
-/* home section */
-/* fares section */
-.fadeInResponsive{
-    visibility: hidden;
-}
-/* offer section */
-/* quotes section */
-.quotesSlideMobile{
-    visibility: hidden;;
-}
-/* instagram section */
-.instagramSlideMobile{
-    visibility: hidden;;
-}
-/* newsletter section */
-/* footer */
+    /* home section */
+    /* fares section */
+    .fadeInResponsive {
+        visibility: hidden;
+    }
+    /* offer section */
+    /* quotes section */
+    .quotesSlideMobile {
+        visibility: hidden;
+        ;
+    }
+    /* instagram section */
+    .instagramSlideMobile {
+        visibility: hidden;
+        ;
+    }
+    /* newsletter section */
+    /* footer */
 }
 
 
 /* Media Queries Iphone 6/7/8 */
 
 @media (max-height: 700px) {
-/* home section */
-/* fares section */
-/* offer section */
-/* quotes section */
-.quotesSlideMobile{
-    visibility: hidden;;
-}
-/* instagram section */
-.instagramSlideMobile{
-    visibility: hidden;;
-}
-/* newsletter section */
-/* footer */
+    /* home section */
+    /* fares section */
+    /* offer section */
+    /* quotes section */
+    .quotesSlideMobile {
+        visibility: hidden;
+    }
+    /* instagram section */
+    .instagramSlideMobile {
+        visibility: hidden;
+    }
+    /* newsletter section */
+    /* footer */
 }
