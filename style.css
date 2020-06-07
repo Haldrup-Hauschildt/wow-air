@@ -135,7 +135,7 @@ nav ul li a {
     height: 340px;
     margin: 25vh 0 0 3vw;
     opacity: 0.9;
-    background-image: url(pictures/yellow_bg_1_copy.png);
+    background-image: url(pictures/yellow_bg_1.png);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -686,6 +686,7 @@ footer {
         width: 400px;
         height: 272px;
         padding: 20px 40px 40px 40px;
+        grid-template-rows: 70px 120px;
     }
     .searchBox h2 {
         font-size: 20px;
@@ -699,17 +700,16 @@ footer {
     .searchBox input[type=text] {
         width: 100%;
         height: 60px;
-        padding: 36px 20px 10px 10px;
-        margin: 8px 0;
-        display: inline-block;
-        border: none;
-        border-radius: 4px;
+        padding: 30px 20px 6px 10px;
         font-size: 18px;
     }
     .searchArrow {
         transform: translate(275px, 32px);
     }
 }
+
+
+/* Media Queries < 900px */
 
 @media (max-width: 900px) {
     /* home section */
@@ -726,6 +726,7 @@ footer {
     }
     .slogan {
         text-align: center;
+        font-size: 76px;
     }
     nav {
         display: none;
@@ -757,6 +758,66 @@ footer {
     }
     /* newsletter section */
     /* footer */
+}
+
+
+/* Media Queries mobile */
+
+@media (max-width: 450px) {
+    /* home section */
+    .homeSlideWelcomeBackground {
+        display: none;
+    }
+    .banner video {
+        display: none;
+    }
+    .banner {
+        background-image: url(pictures/backpacker_hero.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+        justify-content: flex-start;
+        padding-top: 20vh;
+        opacity: 0;
+        animation: homeSlideAnimation 1s normal forwards ease-in-out;
+        animation-delay: 1s;
+    }
+    header {
+        margin: 0 0 calc(30px) 0;
+        animation-delay: 2s;
+    }
+    .slogan {
+        font-size: 59px;
+        color: #3F3F3F;
+    }
+    .searchBox {
+        width: 310px;
+        height: 211px;
+        padding: 7px 30px 30px 30px;
+        grid-template-rows: 60px 110px;
+        animation-delay: 3s;
+    }
+    .searchBox h2 {
+        font-size: 16px;
+    }
+    .searchBoxPlaneIcon {
+        height: 35px;
+    }
+    form {
+        margin-top: unset;
+    }
+    label {
+        transform: translate(9px, 12px);
+        font-size: 14px;
+    }
+    .searchBox input[type=text] {
+        width: 100%;
+        height: 48px;
+        padding: 30px 20px 10px 8px;
+        font-size: 16px;
+    }
+    .searchArrow {
+        transform: translate(210px, 25px);
+    }
 }
 
 
