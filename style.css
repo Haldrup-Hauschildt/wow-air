@@ -444,7 +444,7 @@ label {
 /* styles for quotes slide */
 
 #quotesSlide {
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
