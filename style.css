@@ -472,7 +472,7 @@ label {
 /* styles for instagram slide */
 
 #instagramSlide {
-    min-height: 100vh;
+    max-height: 100vh;
     background: #F1E9E9;
     text-align: right;
     display: flex;
@@ -750,6 +750,52 @@ footer {
     .searchBox {
         margin: unset;
     }
+   
+    /* fares section */
+    .faresPicture img {
+        max-width: 300px;
+        height: auto;
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+
+
+    #faresSlide {
+        min-height: 70vh;
+
+    }
+
+    .faresDetail {
+        grid-template-rows: auto 10%;
+        margin-right: 2em;
+    }
+
+    .faresIconText {
+        max-width: 335px;
+    }
+
+    .faresText h1 {
+       font-size: 2.8em;
+    }
+
+    .faresText p {
+        font-size: 16px;
+    }
+
+    /*instagram section*/
+    #instagramSlide {
+        height: 70vh;
+    }
+    .instagramSlideHeading {
+        font-size: 2.5em;
+    }
+
+    .instagramSlideGrid {
+        height: 60vw;
+    }
+
+
+
 }
 
 
