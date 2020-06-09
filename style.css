@@ -779,6 +779,21 @@ footer {
     .offerThree {
         background-position: left;
     }
+    .noBook {
+        display: block;
+    }
+    .bookFadeIn {
+        animation: none;
+    }
+    .bookFadeOut {
+        animation: none;
+    }
+    .offersHeadingsDown {
+        animation: none;
+    }
+    .offersHeadingsUp {
+        animation: none;
+    }
 }
 
 
