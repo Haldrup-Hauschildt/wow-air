@@ -24,7 +24,7 @@ h4 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: clamp(4rem, 5vw, 5rem);
     line-height: 100%;
 }
 
@@ -196,23 +196,25 @@ label {
 
 #faresSlide {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .faresPicture img {
     max-width: 400px;
     height: auto;
-    margin-left: 7em;
 }
 
 .faresPicture {
     align-self: center;
+    margin-right: 3vw;
 }
 
 .faresInfo {
     display: grid;
     grid-template-rows: 40% 60%;
+    margin-left: 3vw;
+    margin-right: 2vw;
 }
 
 .faresDetail {
@@ -292,14 +294,14 @@ label {
 }
 
 #offersSlide h2 {
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 5rem);
     color: whitesmoke;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #offersSlide h3 {
-    font-size: 150px;
+    font-size: clamp(3rem, 12vw, 12rem);
     font-weight: 600;
     color: #F8BC53;
     text-transform: uppercase;
@@ -481,9 +483,12 @@ label {
     padding: 20px;
 }
 
+.instagramSlideMobileContent {
+    display: none;
+}
+
 .instagramSlideBox {
     width: 70vw;
-    height: 95vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -501,7 +506,7 @@ label {
     max-height: 65vh;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: 20% 15% 15% 17% 33%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .instagramSlideGrid div {
@@ -750,7 +755,6 @@ footer {
     .searchBox {
         margin: unset;
     }
-   
     /* fares section */
     .faresPicture img {
         max-width: 300px;
@@ -758,68 +762,95 @@ footer {
         margin-left: 2em;
         margin-bottom: 2em;
     }
-
-
     #faresSlide {
         min-height: 70vh;
-
     }
-
     .faresDetail {
         grid-template-rows: auto 10%;
         margin-right: 2em;
     }
-
-    .faresIconText {
-        max-width: 335px;
+    .faresIconText p {
+        margin: 0.5em 1em;
     }
-
-    .faresText h1 {
-       font-size: 2.8em;
-    }
-
     .faresText p {
         font-size: 16px;
     }
-
-    /*instagram section*/
-    #instagramSlide {
-        height: 70vh;
+    /* offers section */
+    .offerThree {
+        background-position: left;
     }
-    .instagramSlideHeading {
-        font-size: 2.5em;
-    }
-
-    .instagramSlideGrid {
-        height: 60vw;
-    }
-
-
-
 }
 
 
-/* Media Queries Tablet */
+/* Media Queries < 800px */
+
+@media (max-width: 800px) {
+    /* fares section */
+    .faresPicture {
+        display: none;
+    }
+    .faresInfo {
+        margin-left: 7vw;
+        margin-right: 7vw;
+        max-width: 450px;
+    }
+    /* quotes section */
+    .quoteBox {
+        width: 60%;
+    }
+    /* hide prev and next buttons on carousel */
+    .flickity-button {
+        display: none;
+    }
+}
+
+
+/* Media Queries < 600px */
 
 @media (max-width: 600px) {
-    /* home section */
-    /* fares section */
-    .fadeInResponsive {
-        visibility: hidden;
-    }
-    /* offer section */
-    /* quotes section */
-    .quotesSlideMobile {
-        visibility: hidden;
-        ;
-    }
-    /* instagram section */
-    .instagramSlideMobile {
-        visibility: hidden;
-        ;
+    /* general */
+    h1 {
+        font-size: clamp(2.5rem, 4vw, 4rem);
     }
     /* newsletter section */
+    #newsletterSlide {
+        padding: 0 20px;
+        min-height: 500px;
+    }
+    .newsletterHeading br {
+        display: none;
+    }
+    .newsletterInput {
+        text-align: center;
+    }
+    .newsletterInput #field {
+        width: 80vw;
+    }
+    .newsletterInput #submit {
+        margin-top: 20px;
+        border-radius: 4px;
+    }
     /* footer */
+    footer {
+        height: 700px;
+        grid-template-rows: 670px 30px;
+    }
+    .footerLinks {
+        flex-direction: column;
+        align-items: center;
+        height: 670px;
+        padding: 40px 30px;
+        text-align: center;
+    }
+    .footerLinks li {
+        margin-top: 10px;
+    }
+    .footerSocialContact {
+        margin-top: 20px;
+    }
+    .footerSocialContact img {
+        margin: 10px;
+    }
 }
 
 
@@ -880,23 +911,38 @@ footer {
     .searchArrow {
         transform: translate(210px, 25px);
     }
-}
-
-
-/* Media Queries Iphone 6/7/8 */
-
-@media (max-height: 700px) {
-    /* home section */
-    /* fares section */
-    /* offer section */
+    /* Fares section */
+    #faresSlide {
+        min-height: 520px;
+    }
+    .faresInfo {
+        grid-template-rows: 35% 65%;
+    }
     /* quotes section */
-    .quotesSlideMobile {
-        visibility: hidden;
+    .quoteBox {
+        width: 70%;
+    }
+    #quote {
+        font-size: 1.5em;
     }
     /* instagram section */
-    .instagramSlideMobile {
-        visibility: hidden;
+    #instagramSlide {
+        height: unset;
     }
-    /* newsletter section */
-    /* footer */
+    .instagramSlideBox {
+        width: 85vw;
+        height: unset;
+    }
+    .instagramSlideGrid {
+        display: none;
+    }
+    .instagramSlideMobileContent {
+        display: block;
+        width: 85vw;
+    }
+    .instagramSlideMobileContent img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
