@@ -30,6 +30,9 @@ h1 {
 
 
 /* styles for home slide */
+.navbar{
+    display: none;
+}
 
 #homeSlide {
     min-height: 100vh;
@@ -733,6 +736,7 @@ footer {
         font-size: 18px;
         background-color: #F1E9E9;
         padding-bottom: 2px;
+        display: inherit;
     }
 
     .main-nav {
