@@ -926,7 +926,7 @@ footer {
     .searchArrow {
         transform: translate(210px, 25px);
     }
-    /* Fares section */
+    /* fares section */
     #faresSlide {
         min-height: 520px;
     }
