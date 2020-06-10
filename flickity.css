@@ -6,12 +6,6 @@ https://flickity.metafizzy.co
     position: relative;
 }
 
-@media only screen and (max-width: 766px) {
-    .flickity-enabled {
-        margin-top: 15vh;
-    }
-}
-
 .flickity-enabled:focus {
     outline: none;
 }
