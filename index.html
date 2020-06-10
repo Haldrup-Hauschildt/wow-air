@@ -15,6 +15,26 @@
 <body>
 
     <!-- home slide section -->
+    <section class="navbar">
+        <label class="navbar-toggle"  for="chkToggle">
+                <img src="pictures/open-menu.png" alt="">
+            </label>
+        <a href="#" class="logo">
+            <img src="pictures/wowair-logo-250x250.png" alt="">
+        </a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#faresSlide" class="nav-links">Honest Fares</a>
+          </li>
+          <li>
+            <a href="#offersSlide" class="nav-links">Offers</a>
+          </li>
+          <li>
+            <a href="#instagramSlide" class="nav-links">Instagram</a>
+          </li>
+        </ul> <!-- inspiration from https://codepen.io/nimrodco/pen/GPwzdQ -->
+    </section>
     <section id="homeSlide">
         <section class="banner">
             <header>
@@ -41,12 +61,12 @@
                 <form>
                     <section>
                         <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
-                        <label for="from">From</label>
+                        <label class="formLabel" for="from">From</label>
                         <input type="text" id="from" placeholder="Departure from …">
                     </section>
                     <section>
                         <img class="searchArrow" src="pictures/search_arrow.png" alt="search arrow">
-                        <label for="to">To</label>
+                        <label class="formLabel"  for="to">To</label>
                         <input type="text" id="to" placeholder="Arriving to …">
                     </section>
                 </form>

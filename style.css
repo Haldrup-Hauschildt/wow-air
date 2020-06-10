@@ -30,6 +30,9 @@ h1 {
 
 
 /* styles for home slide */
+.navbar{
+    display: none;
+}
 
 #homeSlide {
     min-height: 100vh;
@@ -170,7 +173,7 @@ form {
     transform: translate(350px, 36px);
 }
 
-label {
+.formLabel{
     position: absolute;
     transform: translate(11px, 18px);
     font-size: 14px;
@@ -734,6 +737,53 @@ footer {
 
 @media (max-width: 900px) {
     /* home section */
+    .navbar {
+        font-size: 18px;
+        background-color: #F1E9E9;
+        padding-bottom: 2px;
+        display: inherit;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: none;
+    }
+
+    .nav-links {
+      text-decoration: none;
+      color: #3F3F3F;
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 15px auto;
+      }
+
+      .logo {
+        display: inline-block;
+      }
+
+      .logo img{
+        width: 28%;
+        margin: 0.5em;
+        margin-top: 2em;
+    }
+
+    .navbar-toggle img{
+        width: 7%;
+        position: absolute;
+        right: 20px;
+        top: 45px;
+      }
+
+       
+    #chkToggle {
+        display: none;
+    }
+  
+    #chkToggle:checked + ul.main-nav {
+        display: block;
+    }
     .banner {
         flex-direction: column;
         align-items: center;
@@ -760,7 +810,6 @@ footer {
         max-width: 300px;
         height: auto;
         margin-left: 2em;
-        margin-bottom: 2em;
     }
     #faresSlide {
         min-height: 70vh;
@@ -873,6 +922,19 @@ footer {
 
 @media (max-width: 450px) {
     /* home section */
+    .navbar-toggle img{
+        width: 8%;
+        top: 25px;
+    }
+
+    .navbar {
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 18%;
+        margin: 1em;
+    }
     .homeSlideWelcomeBackground {
         display: none;
     }
