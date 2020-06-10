@@ -482,7 +482,7 @@ form {
 /* styles for instagram slide */
 
 #instagramSlide {
-    max-height: 100vh;
+    height: 100vh;
     background: #F1E9E9;
     text-align: right;
     display: flex;
@@ -711,6 +711,9 @@ footer {
 
 @media (max-width: 1050px) {
     /* home section */
+    .homeSlideWelcomeBackground {
+        background-image: url(pictures/welcome_mobile.png);
+    }
     .searchBox {
         width: 400px;
         height: 272px;
@@ -734,6 +737,10 @@ footer {
     }
     .searchArrow {
         transform: translate(275px, 32px);
+    }
+    /* instagram section */
+    #instagramSlide {
+        height: unset;
     }
 }
 
@@ -1004,9 +1011,6 @@ footer {
         font-size: 1.5em;
     }
     /* instagram section */
-    #instagramSlide {
-        height: unset;
-    }
     .instagramSlideBox {
         width: 85vw;
         height: unset;
