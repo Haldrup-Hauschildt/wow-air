@@ -960,7 +960,7 @@ footer {
         animation-delay: 1s;
     }
     header {
-        margin: 0 0 calc(30px) 0;
+        margin: 0 0 30px 0;
         animation-delay: 2s;
     }
     .slogan {
@@ -983,7 +983,7 @@ footer {
     form {
         margin-top: unset;
     }
-    label {
+    .formLabel {
         transform: translate(9px, 12px);
         font-size: 14px;
     }
@@ -1011,6 +1011,9 @@ footer {
         font-size: 1.5em;
     }
     /* instagram section */
+    .instagramSlideHeading {
+        text-align: center;
+    }
     .instagramSlideBox {
         width: 85vw;
         height: unset;
@@ -1021,6 +1024,7 @@ footer {
     .instagramSlideMobileContent {
         display: block;
         width: 85vw;
+        margin-bottom: 5vh;
     }
     .instagramSlideMobileContent img {
         object-fit: cover;
