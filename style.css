@@ -479,11 +479,15 @@ form {
     padding-top: 4%;
 }
 
+#quotesSlide{
+    display: grid;
+    grid-template-rows: 1% 99%;
+}
 #quotesSlide img{
-    width: 15%;
-    position: absolute;
-    top: 2550px;
-    right: 190px;
+position: relative;
+max-width: 20%;
+left: 50em;
+top:6em;
 }
 
 
