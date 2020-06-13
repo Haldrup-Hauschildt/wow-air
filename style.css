@@ -24,7 +24,7 @@ h4 {
 }
 
 h1 {
-    font-size: clamp(4rem, 5vw, 5rem);
+    font-size: clamp(40px, 5vw, 80px);
     line-height: 100%;
 }
 
@@ -98,7 +98,7 @@ header {
 .slogan {
     text-align: right;
     font-weight: 600;
-    font-size: clamp(5rem, 8vw, 8rem);
+    font-size: clamp(60px, 8vw, 128px);
     line-height: 100%;
     text-transform: uppercase;
     white-space: nowrap;
@@ -303,14 +303,14 @@ form {
 }
 
 #offersSlide h2 {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(20px, 5vw, 80px);
     color: whitesmoke;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #offersSlide h3 {
-    font-size: clamp(3rem, 12vw, 12rem);
+    font-size: clamp(48px, 12vw, 190px);
     font-weight: 600;
     color: #F8BC53;
     text-transform: uppercase;
@@ -456,13 +456,12 @@ form {
 
 #quotesSlide {
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
 }
 
 .quoteBox {
-    width: 45%;
+    grid-column: 2 / 3;
     word-wrap: break-word;
     text-align: center;
     margin: auto;
@@ -479,17 +478,13 @@ form {
     padding-top: 4%;
 }
 
-#quotesSlide{
-    display: grid;
-    grid-template-rows: 1% 99%;
+#quotesSlide img {
+    grid-column: 3 / 4;
+    width: 200px;
+    left: 50em;
+    top: 6em;
+    margin: auto 0;
 }
-#quotesSlide img{
-position: relative;
-max-width: 20%;
-left: 50em;
-top:6em;
-}
-
 
 
 /* styles for instagram slide */
@@ -864,10 +859,15 @@ footer {
         animation: none;
     }
 
-
-
     /*quotes section*/
-    #quotesSlide img{
+    #quotesSlide {
+        display: flex;
+        margin: unset;
+    }
+    .quoteBox {
+        width: 70%;
+    }
+    #quotesSlide img {
         display: none;
     }
     #quotesSlide {
@@ -888,10 +888,7 @@ footer {
         margin-right: 7vw;
         max-width: 450px;
     }
-    /* quotes section */
-    .quoteBox {
-        width: 60%;
-    }
+    /* offers section */
     /* hide prev and next buttons on carousel */
     .flickity-button {
         display: none;
@@ -902,10 +899,6 @@ footer {
 /* Media Queries < 600px */
 
 @media (max-width: 600px) {
-    /* general */
-    h1 {
-        font-size: clamp(2.5rem, 4vw, 4rem);
-    }
     /* newsletter section */
     #newsletterSlide {
         padding: 0 20px;
@@ -1027,9 +1020,6 @@ footer {
         grid-template-rows: 35% 65%;
     }
     /* quotes section */
-    .quoteBox {
-        width: 70%;
-    }
     #quote {
         font-size: 1.5em;
     }
