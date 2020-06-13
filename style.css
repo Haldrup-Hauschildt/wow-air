@@ -858,6 +858,7 @@ footer {
     .offersHeadingsUp {
         animation: none;
     }
+
     /*quotes section*/
     #quotesSlide {
         display: flex;
@@ -868,6 +869,9 @@ footer {
     }
     #quotesSlide img {
         display: none;
+    }
+    #quotesSlide {
+        display: flex;
     }
 }
 
