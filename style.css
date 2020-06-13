@@ -864,9 +864,14 @@ footer {
         animation: none;
     }
 
+
+
     /*quotes section*/
     #quotesSlide img{
         display: none;
+    }
+    #quotesSlide {
+        display: flex;
     }
 }
 
